@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>navigation</title>
+        <link rel="stylesheet" href="navigation.css">
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <nav>
+            <div class="logo">Maple Spoon</div>
+            <label for="btn" class="icon">
+                <span class="fa fa-bars"></span>
+            </label>
+            <input type="checkbox" id="btn">
+            <ul>
+                <li><a href="/about/about.html">About</a></li>
+                <li>
+                    <label for="btn-1" class="show">Restaurants +</label>
+                    <a href="">Restaurants</a>
+                    <input type="checkbox" id="btn-1">
+                    <ul>
+                        <li><a href="/restaurants/el_Camino/elcamino.html">El Camino</a></li>
+                        <li><a href="/restaurants/farinella/farinella.html">Farinella</li>
+                        </li>
+                        <li><a href="/restaurants/sansotei_ramen/SansoteiRamen.html">Santosei Ramen</a></li>
+                        <li><a href="/restaurants/sugar_marmalade/sugar_marmalade.html">Sugar Marmalade</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="btn-2" class="show">Recipes +</label>
+                    <a href="">Recipes</a>
+                    <input type="checkbox" id="btn-2">
+                    <ul>
+                        <li><a href="/recipes/butter_tarts/butter_tarts.html">Butter Tarts</a></li>
+                        <li><a href="/recipes/chai_latte/Chailatte.html">Chai Latte</a></li>
+                        <li><a href="/recipes/nanaimo_bar/nanaimo_bars.html">Nanaimo Bars</a></li>
+                        <li><a href="/recipes/poutine/poutine.html">Poutine</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="btn-2" class="show">Cuisines +</label>
+                    <a href="#">Cuisines</a>
+                    <input type="checkbox" id="btn-2">
+                    <ul>
+                        <li><a href="/cuisines/sichuan_cuisines/Sichuan_Cuisine.html">Sichuan Cuisine</a></li>
+                    </ul>
+                </li>
+                <li><a href="/contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    
+<script>
+      $('.icon').click(function(){
+        $('span').toggleClass("cancel");
+      });
+    </script>
+
+  </body>
+</html>
